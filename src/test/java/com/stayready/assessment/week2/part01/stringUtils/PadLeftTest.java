@@ -12,6 +12,8 @@ public class PadLeftTest {
         int numberOfUnitsToPad = 10;
         String expected = "     hello";
 
+
+
         // When
         String actual = StringUtils.padLeft(hello, numberOfUnitsToPad);
 
