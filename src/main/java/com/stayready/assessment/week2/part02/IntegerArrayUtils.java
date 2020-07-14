@@ -1,4 +1,5 @@
 package com.stayready.assessment.week2.part02;
+import java.util.ArrayList; //so I can use an arraylist 
 
 public class IntegerArrayUtils {
     /**
@@ -7,7 +8,15 @@ public class IntegerArrayUtils {
      * @return - identical array with one additional element of `valueToBeAdded` at the end of the array
      */
     public static Integer[] add(Integer[] integerArray, Integer valueToBeAdded) {
-        return null;
+        ArrayList<Integer> newArray = new ArrayList<Integer>(); //initialize arraylist 
+        for(int i=0;i<=integerArray.length; i++){
+            newArray.add(integerArray[i]); //add each of the elements in the original array 
+    
+        }
+        newArray.add(valueToBeAdded); //add new integer 
+        Integer[] finalArray = newArray.toArray(new Integer[0]);
+        //Object[] finalArray = newArray.toArray();//convert array list to int array
+        return finalArray;
     }
 
     /**
@@ -17,6 +26,7 @@ public class IntegerArrayUtils {
      * @return `integerArray` with `valueToBeInserted` at index number `indexToInsertAt`
      */
     public static Integer[] replace(Integer[] integerArray, int indexToInsertAt, Integer valueToBeInserted) {
+
         return null;
     }
 
