@@ -36,7 +36,8 @@ public class IntegerArrayUtils {
      * @return element located at `indexToFetch`
      */
     public static Integer get(Integer[] integerArray, Integer indexToFetch) {
-        return null;
+        int integer=integerArray[indexToFetch];
+        return integer;
     }
 
     /**
@@ -44,7 +45,14 @@ public class IntegerArrayUtils {
      * @return identical array with even-values incremented by 1 and odd-values decremented by 1
      */
     public static Integer[] incrementEvenDecrementOdd(Integer[] integerArray) {
-        return null;
+        for (int i=0;i<=integerArray.length;i++){
+            if(integerArray[i]%2==0){//if even 
+                integerArray[i]=integerArray[i]+1;//increment by one 
+            }else{//if odd 
+                integerArray[i]=integerArray[i]-1;//increment by one 
+            }
+        }
+        return integerArray;
     }
 
     /**
